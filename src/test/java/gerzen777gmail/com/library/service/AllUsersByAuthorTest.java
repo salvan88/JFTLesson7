@@ -30,7 +30,7 @@
 //
 //        List<Book> books = bookRepository.getAllByAuthor_Id(3L);
 //
-//
+//          Выдаёт ошибку об уникальности ключа
 //
 //        System.out.println(userRepository.getUsersByBooksIn(books));
 //

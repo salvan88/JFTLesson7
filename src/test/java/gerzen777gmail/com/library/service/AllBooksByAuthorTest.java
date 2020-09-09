@@ -21,6 +21,6 @@ class AllBooksByAuthorTest {
 
         List<Book> books = allBooksByAuthorService.allBooksByAuthor(2L);
 
-        Assertions.assertEquals(2,books.size());
+        Assertions.assertEquals(2, books.size());
     }
 }
