@@ -12,7 +12,7 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     List<Book> getBookByAuthor_IdOrderByName(Long id);
 
-    List<Book> getBookById(Long id);
+    List<Book> getBooksById(Long id);
 
     List<Book> getAllByAuthor_Id(Long id);
 

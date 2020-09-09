@@ -1,6 +1,7 @@
 package gerzen777gmail.com.library.service;
 
 import gerzen777gmail.com.library.model.Book;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,8 +21,6 @@ class AllBooksByUserTest {
 
         List<Book> books = allBooksByUserService.allBooksByUser(1L);
 
-        for (Book string : books) {
-            System.out.println(string.getName());
-        }
+        Assertions.assertEquals(2, books.size());
     }
 }

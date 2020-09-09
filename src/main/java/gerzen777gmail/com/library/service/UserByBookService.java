@@ -20,6 +20,6 @@ public class UserByBookService {
     @Transactional
     public User UserByBook(Long id) {
 
-        return userRepository.getUserByBooksIn(bookRepository.getBookById(id));
+        return userRepository.getUserByBooksIn(bookRepository.getBooksById(id));
     }
 }
