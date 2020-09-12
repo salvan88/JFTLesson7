@@ -12,14 +12,13 @@ import java.util.List;
 
 @SpringBootTest
 @Transactional
-//@Sql({"/script.sql"})
+@Sql({"/script.sql"})
 class AllBooksByAuthorTest {
 
     @Autowired
     AllBooksByAuthorService allBooksByAuthorService;
 
     @Test
-    @Sql({"/script.sql"})
     void allBooksByAuthorTest() {
 
         List<Book> books = allBooksByAuthorService.allBooksByAuthor(2L);

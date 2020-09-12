@@ -10,13 +10,14 @@ import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootTest
 @Transactional
+@Sql({"/script.sql"})
 class UserByBookTest {
 
     @Autowired
     UserByBookService userByBookService;
 
     @Test
-    @Sql({"/script.sql"})
+
     void userByBookTest() {
 
         Assertions.assertEquals("Яна", userByBookService.UserByBook(1L).getName());
