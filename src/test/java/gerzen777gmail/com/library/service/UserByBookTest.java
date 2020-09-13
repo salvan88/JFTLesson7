@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootTest
 @Transactional
-@Sql({"/script.sql"})
+//@Sql({"/script.sql"})
 class UserByBookTest {
 
     @Autowired

@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@Table(name = "author", schema = "library")
 public class Author {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "author")

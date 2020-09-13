@@ -3,6 +3,7 @@ package gerzen777gmail.com.library.model;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "book", schema = "library")
 public class Book {
 
     @Id

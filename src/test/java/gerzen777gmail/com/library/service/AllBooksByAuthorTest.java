@@ -12,7 +12,7 @@ import java.util.List;
 
 @SpringBootTest
 @Transactional
-@Sql({"/script.sql"})
+//@Sql({"/script.sql"})
 class AllBooksByAuthorTest {
 
     @Autowired
